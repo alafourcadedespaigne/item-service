@@ -4,15 +4,17 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import py.com.ale.itemservice.models.entity.Product;
+import py.com.ale.itemservice.models.entity.Producto;
 
 @FeignClient(name = "products-services")
 public interface ProductRestClient {
 
+
   @GetMapping("/listar")
-  List <Product> listar();
+  List <Producto> listar();
+
 
   @GetMapping("ver/{id}")
-  Product detalle(@PathVariable Long id);
+  Producto detalle(@PathVariable Long id);
 
 }

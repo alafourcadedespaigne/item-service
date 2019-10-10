@@ -2,7 +2,7 @@ package py.com.ale.itemservice.models.entity;
 
 public class Item {
 
-  private Product product;
+  private Producto producto;
   private Integer count;
 
   public Item() {
@@ -10,20 +10,20 @@ public class Item {
 
 
   public Double getAmount() {
-    return product.getPrice() * count.doubleValue();
+    return producto.getPrice() * count.doubleValue();
   }
 
-  public Item(Product product, Integer count) {
-    this.product = product;
+  public Item(Producto producto, Integer count) {
+    this.producto = producto;
     this.count = count;
   }
 
-  public Product getProduct() {
-    return product;
+  public Producto getProducto() {
+    return producto;
   }
 
-  public void setProduct(Product product) {
-    this.product = product;
+  public void setProducto(Producto producto) {
+    this.producto = producto;
   }
 
   public Integer getCount() {

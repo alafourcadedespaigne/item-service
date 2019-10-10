@@ -2,7 +2,7 @@ package py.com.ale.itemservice.models.entity;
 
 import java.util.Date;
 
-public class Product {
+public class Producto {
 
   private Long id;
   private String name;
